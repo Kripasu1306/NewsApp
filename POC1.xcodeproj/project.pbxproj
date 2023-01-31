@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4040CACA29855DF5008A8D91 /* TopHeadLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040CAC929855DF5008A8D91 /* TopHeadLines.swift */; };
 		40C28969297FAD8D0051B30C /* NewsMainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C28967297FAD8D0051B30C /* NewsMainPageTableViewCell.swift */; };
 		40C2896A297FAD8D0051B30C /* NewsMainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C28968297FAD8D0051B30C /* NewsMainPageTableViewCell.xib */; };
 		40CF68E42976E97F007095BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF68E32976E97F007095BE /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		22B88F7AF206C29BC3E8E209 /* Pods-POC1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POC1.debug.xcconfig"; path = "Target Support Files/Pods-POC1/Pods-POC1.debug.xcconfig"; sourceTree = "<group>"; };
 		2C917B46BACA35E90260AED8 /* Pods_POC1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POC1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4040CAC929855DF5008A8D91 /* TopHeadLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLines.swift; sourceTree = "<group>"; };
 		40C28967297FAD8D0051B30C /* NewsMainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMainPageTableViewCell.swift; sourceTree = "<group>"; };
 		40C28968297FAD8D0051B30C /* NewsMainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsMainPageTableViewCell.xib; sourceTree = "<group>"; };
 		40CF68E02976E97F007095BE /* POC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POC1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				40CF691D2976F53D007095BE /* NewsData.swift */,
+				4040CAC929855DF5008A8D91 /* TopHeadLines.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				40CF68E82976E97F007095BE /* ViewController.swift in Sources */,
 				40CF691E2976F53D007095BE /* NewsData.swift in Sources */,
 				40CF68E42976E97F007095BE /* AppDelegate.swift in Sources */,
+				4040CACA29855DF5008A8D91 /* TopHeadLines.swift in Sources */,
 				40CF69202976F6ED007095BE /* NetworkHelper.swift in Sources */,
 				40CF68E62976E97F007095BE /* SceneDelegate.swift in Sources */,
 			);

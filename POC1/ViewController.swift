@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableView.automaticDimension
         
-        callFetchAllDataApi()
+        callApiToFetchArrayOfNewsAsResponse()
+        callApiToFetchNestedNewsDataAsResponse()
     }
     
     func printAllTheNewsDataValues()
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func callFetchAllDataApi() {
+    func callApiToFetchArrayOfNewsAsResponse() {
         
         NetworkHelper.fetchAllTheNewsData {[weak self] newsData, error in
             guard let self = self else { return }
@@ -47,6 +48,19 @@ class ViewController: UIViewController {
             }
             
         }
+    }
+    
+    func callApiToFetchNestedNewsDataAsResponse()
+    {
+        NetworkHelper.fetchTopHeadLines (countryString: "in", completion: { topHeadLines, error in
+            guard let topHeadLines = topHeadLines,
+                  error == nil else {
+                print("Response Errored")
+                return }
+            DispatchQueue.main.async {
+                topHeadLines.printTopHeadLinesAsObject()
+            }
+        })
     }
 }
 
